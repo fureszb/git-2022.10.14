@@ -1,0 +1,103 @@
+body{
+    background-color: #282828;
+    color: #fffffd;
+    font-family: 'Varela Round', sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+}
+li{
+    font-size: 12px;
+}
+h3{
+    font-size: 18px;
+}
+.container{
+width: 100%;
+}
+
+#menu>ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style: none;
+    width: 50%;
+}
+#menu>ul>li{
+    padding: 5px;
+    padding-right: 20px;
+    
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    
+}
+#menu>ul>li>a:hover{
+color: rgb(196, 196, 33);
+}
+.kep{
+    text-align: center;
+}
+img{
+    width: 50%;
+}
+.tartalom>h3{text-align: center;}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tartalom{
+    border-right: 2px solid rgba(255, 0, 0, 0.679);
+    height: 450px;
+    padding: 5px;
+}
+.tartalom>ul{padding-left: 20px;}
+.tartalom>ul>li{list-style: circle;
+    background-size: 10px;
+}
+
+.grid{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tartalom{
+        border-right: 0;
+    }
+    #menu>ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        gap: 5px;
+        text-align: center;
+        margin-left: 10%;
+    }
+    #menu>ul>li{
+        border: 1px solid white;
+        width: 125px;
+        
+    }
+    #menu>ul>li>a{
+        display: block;
+        padding: 5px;
+    }
+    #menu>ul>li>a:hover{
+        color: black;
+        }
+    #menu>ul>li:hover{
+        background-color: white;
+
+    }
+    img{
+        width: 20%;
+    }
+
+}
