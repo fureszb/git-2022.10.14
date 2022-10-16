@@ -1,24 +1,13 @@
 body{
-    background-color: #282828;
+    background-color: #000000;
     color: #fffffd;
     font-family: 'Varela Round', sans-serif;
     margin: 0;
 }
 h1{
-    text-align: center;
     font-weight: bold;
     font-size: 38px;
 }
-li{
-    font-size: 12px;
-}
-h3{
-    font-size: 18px;
-}
-.container{
-width: 100%;
-}
-
 .menuhatter{
     background-color: #282828;
     padding: 10px;
@@ -42,56 +31,55 @@ width: 100%;
 #menu>ul>li>a:hover{
     color: rgb(196, 196, 33);
     }
-.kep{
-    text-align: center;
-}
-img{
-    width: 50%;
-}
-.tartalom>h3{text-align: center;}
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.tartalom{
-    border-right: 2px solid rgba(255, 0, 0, 0.679);
-    height: 450px;
-    padding: 5px;
-}
-.tartalom>ul{padding-left: 20px;}
-.tartalom>ul>li{list-style: circle;
-    background-size: 10px;
-}
-
-.grid{
-    width: 80%;
-    max-width: 800px;
+    grid-template-columns: repeat(2, auto);
+    padding-top: 50px;
     margin: auto;
+    width: 80%;
+    max-width: 980px;
+    gap: 100px;
+}
+hr{
+    height: 2px;
+    color: rgba(255, 0, 0, 0.679);
+    background-color:rgba(255, 0, 0, 0.679);
+    border-width: 0;
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+p{
+    font-size: 13px;
+}
+img{
+    width: auto;
+    height: auto;
 }
 @media screen and (max-width: 800px) {
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap:80px;
-    }
-    .tartalom{
-        border-right: 0;
-        height: 100%;
-        padding: 0%;
-    }
+.grid{
+    grid-template-columns: repeat(1, auto);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+}
+@media screen and (max-width: 580px)
+{
     #menu>ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         list-style: none;
         gap: 5px;
         text-align: center;
-        margin-left: 10%;
-        text-align: center;
         margin-left: 2%;
     }
     #menu>ul>li{
         border: 1px solid white;
-        
+   
         
     }
     #menu>ul>li>a{
@@ -105,16 +93,4 @@ img{
         background-color: white;
 
     }
-    img{
-        width: 20%;
-    }
-    h1{padding-top: 10px;}
-   .container{
-    width: 70%;
-    max-width: 500px;
-    margin: auto;
-   }
-
-
-
 }
