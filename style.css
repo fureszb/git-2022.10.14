@@ -23,8 +23,6 @@ height: 800px;
 .menuhatter{
     background-color: #282828;
     padding: 10px;
-    overflow: hidden;
-    position: fixed;
     width: 100%;
 }
 #menu{
@@ -116,6 +114,10 @@ p{
         grid-template-columns: repeat(1, 1fr);
         gap:80px;
     }
+    .grid2{
+        grid-template-columns: repeat(1, auto);
+    }
+     
     .tartalom{
         border-right: 0;
         height: 100%;
@@ -127,18 +129,17 @@ p{
         list-style: none;
         gap: 5px;
         text-align: center;
-        margin-left: 10%;
-        text-align: center;
         margin-left: 2%;
     }
     #menu>ul>li{
         border: 1px solid white;
         
-        
     }
     #menu>ul>li>a{
         display: block;
         padding: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     #menu>ul>li>a:hover{
         color: black;
@@ -148,14 +149,26 @@ p{
 
     }
     img{
-        width: 20%;
+        width: 60%;
+    }
+    .kep2{
+        width: 100%;
+        height: auto;
     }
     h1{padding-top: 10px;}
    .container{
     width: 70%;
     max-width: 500px;
     margin: auto;
+    height: fit-content;
    }
+   .container2{
+    margin: auto;
+    height: fit-content;
+    }
+    #menu{
+       width: 100%;
+    }
 
 
 

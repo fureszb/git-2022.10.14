@@ -61,10 +61,10 @@ img{
     height: auto;
 }
 @media screen and (max-width: 800px) {
-.grid{
+.grid2{
     grid-template-columns: repeat(1, auto);
 }
-img{
+.kep2{
     width: 100%;
     height: auto;
 }
