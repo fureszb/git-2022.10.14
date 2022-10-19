@@ -17,11 +17,18 @@ h3{
 }
 .container{
 width: 100%;
+height: 800px;
 }
 
 .menuhatter{
     background-color: #282828;
     padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+#menu{
+    width: 45%;
 }
 #menu>ul>li>a{
     text-decoration: none;
@@ -54,19 +61,54 @@ img{
     grid-template-columns: repeat(3, 1fr);
 }
 .tartalom{
-    border-right: 2px solid rgba(255, 0, 0, 0.679);
-    height: 450px;
-    padding: 5px;
+    border-right: 2.3px solid rgba(255, 0, 0, 0.679);
+    padding: 9px;
 }
 .tartalom>ul{padding-left: 20px;}
 .tartalom>ul>li{list-style: circle;
     background-size: 10px;
+    line-height: 17px;
+    padding: 4px;
 }
 
 .grid{
     width: 80%;
     max-width: 800px;
     margin: auto;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-top: 50px;
+    margin: auto;
+    width: 80%;
+    max-width: 980px;
+    gap: 100px;
+    padding-top: 150px;
+}
+hr{
+    height: 2px;
+    color: rgba(255, 0, 0, 0.679);
+    background-color:rgba(255, 0, 0, 0.679);
+    border-width: 0;
+    width: 100%;
+}
+.container2{
+    width: 100%;
+    background-color: #000000;
+    height: 840px;
+}
+
+.h12{
+    font-weight: bold;
+    font-size: 38px;
+}
+.kep2{
+    width: auto;
+    height: auto;
+}
+p{
+    color: #a6aeae;
 }
 @media screen and (max-width: 800px) {
     .grid{
